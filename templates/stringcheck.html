@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="homeLink">
+      <a href="/">Home</a>
+    </div>
+    <div class="inputForm">
+      <form action="/status" method="post">
+      <div>
+        <label for="apikey">Please submit Your HIBP API key:</label>
+        <br>
+        <br>
+        <input type="password" id="apikey" name="apikey" placeholder="HIBP API key...">
+      </div>
+      <div>
+        <br>
+        <label for="stream">Please submit Your emails to check in one string:</label>
+        <br>
+        <br>
+        <textarea id="stream" name="stream" placeholder="Emails to check..." style="height:200px"></textarea>
+      </div>
+      <br>
+      <div>
+        <input type="submit" value="Submit">
+      </div>
+      </form>
+    </div>
+{% endblock %}

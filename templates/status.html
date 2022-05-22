@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div>
+        <h2>Status page</h2>
+        <p class="tableName">Checked emails table</p>
+        <table id="checkResult">
+            <tr>
+                <th>#</th>
+                {% for key in result[1].keys() %}
+                <th>{{ key }}</th>
+                {% endfor %}
+            </tr>
+            {% for key, values in result.items() %}
+            <tr>
+                <td> {{ key }} </td>
+                {% for v in values.values() %}
+                <td> {{ v }} </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <form action="/storage/{{ reportName }}" class="csvDownload">
+            <button type="submit">Download CSV</button>
+        </form>
+    </div>
+{% endblock %}

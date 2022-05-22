@@ -1,0 +1,121 @@
+body {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background: #5d5d5d;
+    font-family: Arial, Georgia, Times, serif;
+    color: #ffd500;
+  }
+  
+h1 {
+  width: 300px;
+  padding: 24px 12px 24px 0;
+  margin: auto;
+  text-align: center;
+}
+
+h2, p, h3 {
+  width: 300px;
+  padding: 6px 6px 6px 0;
+  margin: auto;
+  text-align: center;
+}
+
+.errorMsg {
+  width: 500px;
+  padding: 6px 6px 6px 0;
+  margin: auto;
+}
+
+.homeLink {  
+  margin: auto;
+  width: 300px;
+  padding: 6px 6px 12px 0;
+  text-align: center;
+}
+
+a:link, a:visited {  
+  color: #ffd500;
+}
+
+a:hover  {
+  color: #ffec90;
+}
+
+.inputForm {
+  width: 300px;
+  margin: auto;
+}
+
+.csvDownload {
+  width: 550px;
+  margin: auto;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+}
+
+textarea, input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+  background-color: #FFDD3C;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ffec90;
+}
+
+button {
+  background-color: #FFDD3C;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffec90;
+}
+
+.tableName {
+  padding: 12px 12px 12px 0;
+  width: 530px;
+  margin: auto;
+  text-align: left;
+}
+
+#checkResult {
+  border-collapse: collapse;
+  width: 550px;
+  margin: auto;
+}
+
+#checkResult td, #checkResult th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#checkResult tr:nth-child(even) {
+  background-color: #1e1e1e;
+}
+
+#checkResult tr:hover {
+  background-color: #303030;
+}
+
+#checkResult th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+}
